@@ -4,9 +4,14 @@ The SAS macro **_%tblMaker()_** can currently be used to create summary tables i
 
 ```sas
 /* This is a SAS code example */
-data example;
-    set sashelp.class;
-    where age > 12;
-    keep name age height weight;
-run;
+ods rtf path = "G:\My Drive\1. Academia\1. Teaching" 
+	file = "tbl.rtf"  
+style = journal;
+
+	%tblMaker(
+		data = SASHELP.baseball(keep = league natbat crruns division nassts),
+		byVar = league
+	);
+
+ods rtf close;
 ```
