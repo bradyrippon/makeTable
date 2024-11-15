@@ -13,18 +13,22 @@ This will execute the macro directly from this GitHub page. You can alternative 
 
 
 # Examples
+### SASHELP.baseball
 ```r
 %tblMaker(
 	data = SASHELP.baseball(keep = league natbat crruns division nassts),
 	byVar = league
 );
 ```
+![summary table for SASHELP.baseball](https://github.com/bradyrippon/tblMaker/blob/main/figures/tbl-baseball.png?raw=true)
 
+### SASHELP.heart
 ```r
 %tblMaker(
 	data = SASHELP.heart(keep = status sex -- systolic chol_status bp_status),
 	byVar = status
 );
 ```
+![summary table for SASHELP.heart](https://github.com/bradyrippon/tblMaker/blob/main/figures/tbl-heart.png?raw=true)
 
 
