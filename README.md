@@ -12,6 +12,16 @@ filename tblMaker url "https://raw.githubusercontent.com/bradyrippon/tblMaker/re
 This will execute the macro directly from this GitHub page. You can alternative download the raw code file and run locally. 
 
 
+# Usage
+**_%tblMaker(_**
+	**data** = _your dataset_,
+ 	**byVar** = _column subsetting variable_,
+  	**missingRow** = _("Yes", "No") to display missing data rows (**Yes** default)_,
+   	**statContinuous** = _("Mean", "Median", "Both") for continuous data display (**Mean** default)_,
+    	**showTest** = _("Yes", "No") to display test column (**No** default)_,
+**);**
+
+
 # Examples
 Please note that the examples below were generated using the _journal_ style within **ods rtf** file exporting. You should use whichever style template you'd like to design your table. 
 
@@ -31,6 +41,6 @@ Please note that the examples below were generated using the _journal_ style wit
 	byVar = status
 );
 ```
-![summary table for SASHELP.heart](https://github.com/bradyrippon/tblMaker/blob/main/figures/tbl-heart.png?raw=true)
+![summary table for SASHELP.heart](https://github.com/bradyrippon/tblMaker/blob/main/figures/tbl-heart.png)
 
 
