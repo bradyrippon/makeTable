@@ -4,7 +4,7 @@ The SAS macro **_%tblMaker()_** can currently be used to create summary tables i
 
 ```sas
 %tblMaker(
-		data = SASHELP.baseball(keep = league natbat crruns division nassts),
-		byVar = league
-	);
+	data = SASHELP.baseball(keep = league natbat crruns division nassts),
+	byVar = league
+);
 ```
