@@ -13,12 +13,12 @@ This will execute the macro directly from this GitHub page. You can alternative 
 
 
 # Usage
-**_%tblMaker(_** <br />
+**_%tblMaker(_** <br /> <br />
 	**data** = _your dataset_, <br />
  	**byVar** = _column subsetting variable_, <br />
   	**missingRow** = _("Yes", "No") to display missing data rows (**Yes** default)_, <br />
 	**statContinuous** = _("Mean", "Median", "Both") for continuous data display (**Mean** default)_, <br />
-	**showTest** = _("Yes", "No") to display test column (**No** default)_, <br />
+	**showTest** = _("Yes", "No") to display test column (**No** default)_, <br /> <br />
 **);**
 
 
