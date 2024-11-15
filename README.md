@@ -12,14 +12,20 @@ filename tblMaker url "https://raw.githubusercontent.com/bradyrippon/tblMaker/re
 This will execute the macro directly from this GitHub page. You can alternative download the raw code file and run locally. 
 
 
-# Usage
+# Basic Usage
 **_%tblMaker(_** <br /> <br />
-	**data** = _your dataset_, <br />
- 	**byVar** = _column subsetting variable_, <br />
-  	**missingRow** = _("Yes", "No") to display missing data rows (**Yes** default)_, <br />
-	**statContinuous** = _("Mean", "Median", "Both") for continuous data display (**Mean** default)_, <br />
-	**showTest** = _("Yes", "No") to display test column (**No** default)_, <br /> <br />
+	data = ,
+ 	byVar = ,
+  	missingRow = ,
+	statContinuous = ,
+	showTest =
 **);**
+
+**data** = _your dataset_, <br />
+**byVar** = _column subsetting variable_, <br />
+**missingRow** = _("Yes", "No") to display missing data rows (**Yes** default)_, <br />
+**statContinuous** = _("Mean", "Median", "Both") for continuous data display (**Mean** default)_, <br />
+**showTest** = _("Yes", "No") to display test column (**No** default)_, <br /> <br />
 
 
 # Examples
