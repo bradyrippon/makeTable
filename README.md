@@ -3,15 +3,8 @@
 The SAS macro **_%tblMaker()_** can currently be used to create summary tables in the form of a standard **Table 1** seen in medical journals. This macro automatically detects categorical/continuous variables, calculates appropriate descriptive statistics, reports data missingness, and performs appropriate statistical tests across column groupings. 
 
 ```sas
-/* This is a SAS code example */
-ods rtf path = "G:\My Drive\1. Academia\1. Teaching" 
-	file = "tbl.rtf"  
-style = journal;
-
-	%tblMaker(
+%tblMaker(
 		data = SASHELP.baseball(keep = league natbat crruns division nassts),
 		byVar = league
 	);
-
-ods rtf close;
 ```
