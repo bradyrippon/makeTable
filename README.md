@@ -13,7 +13,7 @@ This will execute the macro directly from this GitHub page. You can alternative 
 
 
 # Examples
-Please note that the examples below were generated using the _journal_ style within **ODS rtf** file exporting. You should use whichever style template you'd like to design your table. 
+Please note that the examples below were generated using the _journal_ style within **ods rtf** file exporting. You should use whichever style template you'd like to design your table. 
 
 ### SASHELP.baseball
 ```r
@@ -22,7 +22,7 @@ Please note that the examples below were generated using the _journal_ style wit
 	byVar = league
 );
 ```
-![summary table for SASHELP.baseball](https://github.com/bradyrippon/tblMaker/blob/main/figures/tbl-baseball.png?raw=true)
+![summary table for SASHELP.baseball](https://github.com/bradyrippon/tblMaker/blob/main/figures/tbl-baseball.png)
 
 ### SASHELP.heart
 ```r
