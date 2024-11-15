@@ -1,11 +1,11 @@
 
 *_______________________________________________*
-*												*
-*		  CREATING SAS SUMMARY TABLES			*
-*			LAST UPDATED: 11/15/2024			*
-*												*
+*                                               *
+*         CREATING SAS SUMMARY TABLES           *
+*           LAST UPDATED: 11/15/2024            *
+*                                               *
 *_____________________ brr7014@med.cornell.edu  * 
-*												*
+*                                               *
 
 /* -_-_-_-_-_-_-_-_ VERSIONS _-_-_-_-_-_-_-_- */
 
@@ -18,14 +18,14 @@
 /** TABLE OF CONTENTS **
 
 
-%nobs();				/* LINE 37		/* Count rows in dataset
-%getContents();			/* LINE 53		/* Count table variables and sort in [tbl.contents]
-%getStatsContinuous();	/* LINE 150		/* Generate continuous descriptive statistics
-%getTestContinuous();	/* LINE 239		/* Generate continuous test results
-%getStatsCategorical();	/* LINE 358		/* Generate categorical descriptive statistics
-%getTestCategorical();	/* LINE 489		/* Generate categorical test results
+%nobs();                /* LINE 37      /* Count rows in dataset
+%getContents();         /* LINE 53      /* Count table variables and sort in [tbl.contents]
+%getStatsContinuous();  /* LINE 150     /* Generate continuous descriptive statistics
+%getTestContinuous();   /* LINE 239     /* Generate continuous test results
+%getStatsCategorical(); /* LINE 358     /* Generate categorical descriptive statistics
+%getTestCategorical();  /* LINE 489     /* Generate categorical test results
 
-%tblMaker();			/* LINE 577		/* Generate summary table (using above macros)
+%tblMaker();            /* LINE 577     /* Generate summary table (using above macros)
 
 
  ** TABLE OF CONTENTS **/ 
@@ -531,7 +531,7 @@
 	%if &lowExpected <=20 %then %do;
 		data _NULL_;
 			set tbl.chisq;
-			where Statistic = "Chi-square";
+			where Statistic = "Chi-Square";
 			call symput("pvalueRaw", Prob);
 		run;
 	%end;
@@ -787,6 +787,3 @@
 	run;
 
 %mend tblMaker;
-
-
-
